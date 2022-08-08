@@ -22,9 +22,10 @@ Is just a hello world script used inside the docker file
 Branches:
 
 - main: sample app
-- version1: ..
-- version2: ..
-- version3: ..
-- formal1: ..
-- formal2: ..
+- dockerfile-best-practices-v1: Docker file best practices
+- version-1: ..
+- version-2: ..
+- version-3: ..
+- formal-1: ..
+- formal-2: ..
 
