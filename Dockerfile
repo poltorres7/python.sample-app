@@ -1,6 +1,11 @@
 FROM python:latest
 
-COPY main.py /
+WORKDIR /myapp
 
-CMD [ "python", "./main.py" ]
+RUN mkdir myapp && adduser --disabled-login --gecos '' sampleuser && chown -R sampleuser /myapp 
+
+USER sampleuser
+COPY main.py /myapp/
+
+CMD [ "python", "main.py" ]
 
